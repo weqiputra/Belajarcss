@@ -1,0 +1,71 @@
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  background-color: rgb(208, 203, 203);
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+.container-satu {
+  width: 600px;
+  margin: 15px auto;
+  background-color: #ffff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* css latihan kedua */
+
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.layanan {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.layanan.pertama {
+  background-color: aquamarine;
+}
+
+.layanan.kedua {
+  background-color: rgb(192, 141, 75);
+}
+
+.layanan.ketiga {
+  background-color: bisque;
+}
+
+/* responsif */
+
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layanan {
+    width: 30%;
+  }
+}
